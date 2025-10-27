@@ -10,7 +10,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('/uwverblijfvergunning/fotos/foto1.png');
+  background-image: url('/fotos/foto1.png');
   background-size: cover;
   background-position: center;
   display: flex;
