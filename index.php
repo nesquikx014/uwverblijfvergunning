@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -10,23 +9,26 @@
 <body>
   <!-- HERO SECTIE -->
   <header class="hero">
+    <div class="top-bar">
+     <a href="mailto:info@uwverblijfsvergunning.nl" class="free-intake">GRATIS INTAKEGESPREK</a>
+      <a href="#" class="contact-btn">CONTACT</a>
+    </div>
+
     <div class="overlay"></div>
     <div class="hero-content">
-      <p class="free-intake">GRATIS INTAKEGESPREK</p>
       <h1>UwVerblijfsvergunning.nl</h1>
       <h2>Alles over uw bedrijf in Nederland</h2>
       <p class="experience">meer dan 18 jaar ervaring<br>binnen de vreemdelingenrecht</p>
-
-      <nav class="main-menu">
-        <a href="#">Arbeid bij (Ongehuwde) Partner</a>
-        <a href="#">Visum Familiebezoek</a>
-        <a href="#">Aanvraag Nederlandse Nationaliteit</a>
-        <a href="#">Chavez procedure</a>
-        <a href="#">MVV - aanvraag familielid</a>
-        <a href="#">Arbeid</a>
-      </nav>
     </div>
-    <a href="#" class="contact-btn">CONTACT</a>
+
+    <nav class="main-menu">
+      <a href="#">Arbeid bij (Ongehuwde) Partner</a>
+      <a href="#">Visum Familiebezoek</a>
+      <a href="#">Aanvraag Nederlandse Nationaliteit</a>
+      <a href="#">Chavez procedure</a>
+      <a href="#">MVV - aanvraag familielid</a>
+      <a href="#">Arbeid</a>
+    </nav>
   </header>
 
   <!-- HOOFDSECTIE -->
@@ -48,6 +50,6 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

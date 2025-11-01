@@ -35,10 +35,22 @@ body {
 }
 
 .free-intake {
-  font-size: 0.9rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: black;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 0.4rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  z-index: 2;
 }
+
+.free-intake:hover {
+  background: #333;
+}
+
 
 .hero h1 {
   font-size: 2.5rem;
@@ -76,7 +88,8 @@ body {
   background: #ddd;
 }
 
-/* Contact-knop */
+
+
 .contact-btn {
   position: absolute;
   top: 20px;
