@@ -6,8 +6,8 @@
 <style>
     .contact-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
   background: black;
   color: white;
   padding: 10px 16px;

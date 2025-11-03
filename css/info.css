@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.info-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.info-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}       
+
+.info-container p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}   
+.info-container ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}   
+.info-container a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.info-container a:hover {
+    text-decoration: underline;
+}
+.info-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}

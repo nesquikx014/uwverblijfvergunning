@@ -92,8 +92,8 @@ body {
 
 .contact-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
   background: black;
   color: white;
   padding: 10px 16px;
@@ -129,8 +129,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.1rem;
-  margin-top: 16rem;
-}
+  margin-bottom: 20rem;
+  margin-top: 5rem;}
 
 .buttons a {
   background: #f0f0f0;

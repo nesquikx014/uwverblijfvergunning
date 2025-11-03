@@ -32,7 +32,7 @@
   <!-- HOOFDSECTIE -->
   <section class="main-section">
     <div class="content-box">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Judge_gavel_%28PSF%29.png" alt="Gavel">
+      <img src="" alt="">
       <div class="buttons">
         <a href="#">Verblijfsvergunning regular</a>
         <a href="info.php?page=EUprocedure">EU procedure</a>
