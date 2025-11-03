@@ -18,3 +18,4 @@ if (!in_array($page, $allowed_pages)) {
 // Include the files with full path for clarity
 include_once __DIR__ . '/header.php';
 include_once __DIR__ . "/info/{$page}.php";
+include_once __DIR__ . '/footer.php';

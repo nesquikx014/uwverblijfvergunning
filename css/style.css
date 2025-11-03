@@ -130,13 +130,19 @@ body {
 /* Hoofdsectie */
 .main-section {
   background: white;
-  padding: 50px 20px;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content-box {
-  max-width: 800px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 50px 20px;
+  flex-grow: 1;
 }
 
 .content-box img {
@@ -149,8 +155,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 14rem;
-  margin-top: 10rem;
+  margin: 4rem 0;
 }
 .Filosofie   {
 padding: 5rem 2rem;
@@ -178,8 +183,11 @@ padding: 5rem 2rem;
 }
 
 .contact-info {
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #444;
+  width: 100%;
+  background-color: #3f3d3d;
+  color: rgb(255, 255, 255);
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: auto;
 }
-

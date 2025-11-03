@@ -57,9 +57,8 @@
         <a href="#">Intrekking verblijfsvergunning</a>
         <a href="#">Over ons</a>
       </div>
-
-
     </div>
+    
     <div class="contact-info">
       <p>📧 info@uwverblijfsvergunning.nl</p>
       <p>📞 +31 297 548 241</p>
