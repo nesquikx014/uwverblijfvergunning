@@ -128,16 +128,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.1rem;
-  margin-bottom: 20rem;
-  margin-top: 5rem;}
+  gap: 2rem;
+  margin-bottom: 14rem;
+  margin-top: 10rem;
+}
 
 .buttons a {
-  background: #f0f0f0;
-  padding: 10px 20px;
-  border-radius: 30px;
+  background: #000000;
+  padding: 1rem 1rem;
+  border-radius: 3rem;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   transition: background 0.2s;
 }
