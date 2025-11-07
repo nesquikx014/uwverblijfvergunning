@@ -1,17 +1,14 @@
-    <div class="contact-info">
-      <p>📧 info@uwverblijfsvergunning.nl</p>
-      <p>📞 +31 297 548 241</p>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-brand">UwVerblijfsvergunning.nl</p>
+    <div class="footer-links">
+      <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
+      <span>Postbus 1245, 2130 EM Hoofddorp</span>
+      <a href="info.php?page=EUprocedure">Kennisbank</a>
     </div>
-
-    <style>
-
-.contact-info {
-  width: 100%;
-  background-color: #3f3d3d;
-  color: rgb(255, 255, 255);
-  padding: 2rem 1rem;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: auto;
-}
-    </style>
+  </div>
+  <p class="footer-bottom">© <?= date('Y'); ?> UwVerblijfsvergunning.nl</p>
+</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>

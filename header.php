@@ -1,35 +1,26 @@
-    <div class="top-bar">
-     <a href="mailto:info@uwverblijfsvergunning.nl" class="free-intake">GRATIS INTAKEGESPREK</a>
-      <a href="#" class="contact-btn">CONTACT</a>
-    </div>
-    
-<style>
-    .contact-btn {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  background: black;
-  color: white;
-  padding: 10px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  z-index: 2;
-}
-.free-intake {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  background: black;
-  color: white;
-  padding: 10px 16px;
-  text-decoration: none;
-  border-radius: 0.4rem;
-  font-weight: bold;
-  z-index: 2;
-  
-}
-
-
-
-    </style>
+<?php
+$page_title = $page_title ?? 'UwVerblijfsvergunning.nl';
+?>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?></title>
+  <meta name="description" content="UwVerblijfsvergunning.nl helpt u met verblijfsvergunningen, naturalisatie en bezwaarprocedures in Nederland.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.php">UwVerblijfsvergunning.nl</a>
+    <nav class="main-nav" aria-label="Hoofdmenu">
+      <a href="index.php">Home</a>
+      <a href="index.php#diensten">Diensten</a>
+      <a href="index.php#over">Over ons</a>
+      <a href="index.php#contact">Contact</a>
+      <a href="info.php?page=EUprocedure">Kennisbank</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content">

@@ -1,8 +1,25 @@
- // Fade-out effect bij scrollen
-window.addEventListener("scroll", function () {
-  const hero = document.querySelector(".hero");
-  const scrollTop = window.scrollY;
-  const fadeSpeed = 0.0025; // pas dit aan voor meer/minder fade
-  const newOpacity = Math.max(1 - scrollTop * fadeSpeed, 0);
-  hero.style.opacity = newOpacity;
-});
+const hero = document.querySelector('.hero');
+const header = document.querySelector('.site-header');
+
+if (!hero && header) {
+  header.classList.add('is-solid');
+}
+
+const handleScroll = () => {
+  const scrollY = window.scrollY;
+  if (hero) {
+    const offset = scrollY * 0.3;
+    hero.style.backgroundPositionY = `calc(50% + ${offset}px)`;
+  }
+  if (header) {
+    if (!hero) {
+      header.classList.add('is-solid');
+      return;
+    }
+    const threshold = hero.offsetHeight * 0.45;
+    header.classList.toggle('is-solid', scrollY > threshold);
+  }
+};
+
+handleScroll();
+window.addEventListener('scroll', handleScroll, { passive: true });

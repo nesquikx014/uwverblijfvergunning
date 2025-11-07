@@ -1,85 +1,142 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UwVerblijfsvergunning.nl</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <!-- HERO SECTIE -->
-  <header class="hero">
-    
-    <?php include 'header.php'; ?>
+<?php
+$page_title = 'UwVerblijfsvergunning.nl';
 
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>UwVerblijfsvergunning.nl</h1>
-      <h2>Alles over uw bedrijf in Nederland</h2>
-      <p class="experience">meer dan 18 jaar ervaring<br>binnen de vreemdelingenrecht</p>
+$contactFeedback = '';
+if (isset($_GET['message'])) {
+    if ($_GET['message'] === 'success') {
+        $contactFeedback = 'Bedankt! We nemen binnen één werkdag contact met u op.';
+    } elseif ($_GET['message'] === 'error') {
+        $contactFeedback = 'Er ging iets mis bij het versturen. Mail ons rechtstreeks via info@uwverblijfsvergunning.nl.';
+    }
+}
+
+include 'header.php';
+?>
+
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <h1>Hulp bij uw verblijfsvergunning in Nederland</h1>
+    <p>Meer dan 18 jaar ervaring met gezinshereniging, EU-rechten, arbeid en naturalisatie. We leggen uit wat nodig is en begeleiden u stap voor stap.</p>
+    <div class="hero-actions">
+      <a class="btn btn--primary" href="#contact">Plan een intake</a>
+      <a class="btn btn--ghost" href="info.php?page=EUprocedure">Lees onze uitleg</a>
     </div>
+  </div>
+</section>
 
-    <nav class="main-menu">
-      <a href="#">Arbeid bij (Ongehuwde) Partner</a>
-      <a href="#">Visum Familiebezoek</a>
-      <a href="#">Aanvraag Nederlandse Nationaliteit</a>
-      <a href="#">Chavez procedure</a>
-      <a href="#">MVV - aanvraag familielid</a>
-      <a href="#">Arbeid</a>
-    </nav>
+<section class="section" id="diensten">
+  <div class="container">
+    <h2>Wat wij voor u doen</h2>
+    <p class="intro">Een kleine selectie van trajecten die wij dagelijks begeleiden.</p>
+    <div class="grid">
+      <article class="tile">
+        <h3>Gezinshereniging</h3>
+        <p>Partner, kind of gezin naar Nederland halen. Wij helpen met checklist, bewijs en MVV-aanvraag.</p>
+        <a href="info.php?page=gezinshereniging">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>EU- en Chavez-Vilchez</h3>
+        <p>Verblijf bij uw Nederlandse kind of partner binnen de EU-regels. Praktische uitleg en dossieropbouw.</p>
+        <a href="info.php?page=EUprocedure">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>Arbeid &amp; ondernemerschap</h3>
+        <p>Kennismigrant, start-up of zelfstandige. We kijken mee met contracten, salaris en IND-indiening.</p>
+        <a href="info.php?page=arbeidsmigratie">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>Nederlanderschap</h3>
+        <p>Voorbereiding op naturalisatie, documenten verzamelen en meekijken met de gemeente.</p>
+        <a href="info.php?page=nederlanderschap">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>Bezwaar en beroep</h3>
+        <p>Afwijzing ontvangen? We beoordelen de beslissing en dienen binnen de termijn bezwaar in.</p>
+        <a href="info.php?page=bezwaar-beroep">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>Intake op maat</h3>
+        <p>Snel helderheid over uw situatie. Binnen 24 uur ontvangt u een stappenplan en kostenoverzicht.</p>
+        <a href="#contact">Plan intake</a>
+      </article>
+    </div>
+  </div>
+</section>
 
+<section class="section" id="over">
+  <div class="container about">
     <div>
-
-  </header>
-
-  <!-- HOOFDSECTIE -->
-
-
-    <div class="filosofie-row">
-      <div class="filosofie-col">
-        <h1 class="filosofie">ONZE FILOSOFIE</h1>
-        <p>Bij UwVerblijfsvergunning.nl zoeken wij altijd een oplossing voor uw persoonlijke situatie. Er is geen standaard werkwijze binnen het vreemdelingenrecht. Dit is altijd maatwerk. Dat betekent dat voor iedereen een ander route is om een verblijfsvergunning te kunnen bemachtigen.</p>
-      </div>
-      <div class="filosofie-col">
-        <h1 class="filosofie">ONZE TARIEVEN</h1>
-        <p>Wij bieden onze diensten aan voor vaste tarieven. Dit is tegenover particulieren transparant en staat u nooit voor financiële verrassingen. Er komen voor u geen bijkomende kosten dan het afgesproken tarief.</p>
-      </div>
+      <h2>Onze werkwijze</h2>
+      <p>Wij houden het graag simpel. Eén contactpersoon, duidelijke uitleg en vaste tarieven. U weet vooraf wat nodig is en welke documenten belangrijk zijn.</p>
+      <ul>
+        <li>Persoonlijke intake, telefonisch of digitaal</li>
+        <li>Checklist op maat en hulp bij het verzamelen van bewijs</li>
+        <li>Wij dienen uw aanvraag in en volgen de IND-termijnen</li>
+      </ul>
     </div>
+    <div>
+      <img src="fotos/foto2.jpg" alt="Overleg met cliënten" loading="lazy">
+    </div>
+  </div>
+</section>
 
-  <section class="main-section">
-    <div class="content-box">
-      <img src="" alt="">
-      <div class="buttons">
-        <a href="#">Verblijfsvergunning regular</a>
-        <a href="info.php?page=EUprocedure">EU procedure</a>
-        <a href="#">VISUM kort verblijf</a>
-        <a href="#">Nederlanderschap</a>
-        <a href="#">Intrekking verblijfsvergunning</a>
-        <a href="#">Over ons</a>
-      </div>
-
-      <div class="quick-contact">
-        <h2>Snel Contact</h2>
-        <form action="send-contact.php" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="email">Uw e-mailadres:</label>
-            <input type="email" id="email" name="email" required placeholder="uw@email.nl">
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Neem contact op</h2>
+        <p class="contact-lead">Laat uw gegevens achter en wij komen binnen één werkdag bij u terug.</p>
+        <div class="contact-links">
+          <div>
+            <span>Bel ons</span>
+            <a href="tel:+31297548241">0297&nbsp;548&nbsp;241</a>
           </div>
-          <div class="form-group">
-            <label for="message">Uw vraag:</label>
-            <textarea id="message" name="message" required placeholder="Beschrijf uw situatie kort..."></textarea>
+          <div>
+            <span>E-mail</span>
+            <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
           </div>
-          <button type="submit" class="submit-btn">Verstuur</button>
-        </form>
+          <div>
+            <span>Adres</span>
+            <strong>Postbus 1245, 2130 EM Hoofddorp</strong>
+          </div>
+        </div>
       </div>
+      <form action="send-contact.php" method="POST" class="contact-form">
+        <?php if ($contactFeedback): ?>
+          <p class="form-feedback"><?= htmlspecialchars($contactFeedback, ENT_QUOTES, 'UTF-8'); ?></p>
+        <?php endif; ?>
+        <label>
+          Naam
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          E-mailadres
+          <input type="email" name="email" required>
+        </label>
+        <div class="form-row">
+          <label>
+            Telefoon (optioneel)
+            <input type="tel" name="phone">
+          </label>
+          <label>
+            Onderwerp
+            <select name="topic">
+              <option value="intake">Ik wil een intakegesprek plannen</option>
+              <option value="second-opinion">Ik zoek een second opinion</option>
+              <option value="employer">Ik neem contact op als werkgever</option>
+              <option value="other">Andere vraag</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          Uw vraag
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn btn--primary" type="submit">Verstuur bericht</button>
+      </form>
     </div>
-    
-    <div class="contact-info">
-      <p>📧 info@uwverblijfsvergunning.nl</p>
-      <p>📞 +31 297 548 241</p>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
