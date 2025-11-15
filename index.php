@@ -20,7 +20,7 @@ include 'header.php';
     <p>Meer dan 18 jaar ervaring met gezinshereniging, EU-rechten, arbeid en naturalisatie. We leggen uit wat nodig is en begeleiden u stap voor stap.</p>
     <div class="hero-actions">
       <a class="btn btn--primary" href="#contact">Plan een intake</a>
-      <a class="btn btn--ghost" href="info.php?page=EUprocedure">Lees onze uitleg</a>
+      <a class="btn btn--ghost" href="kennisbank.php">Lees onze uitleg</a>
     </div>
   </div>
 </section>
