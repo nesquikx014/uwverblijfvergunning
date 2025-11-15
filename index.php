@@ -68,11 +68,16 @@ include 'header.php';
   <div class="container about">
     <div>
       <h2>Onze werkwijze</h2>
-      <p>Wij houden het graag simpel. Eén contactpersoon, duidelijke uitleg en vaste tarieven. U weet vooraf wat nodig is en welke documenten belangrijk zijn.</p>
+
+
+Laat de toekomst je nooit storen. U zult het tegemoet treden, als het moet, met dezelfde wapens van de rede waartegen u zich vandaag bewapent. Je zult het tegemoet treden, als het moet, met dezelfde wapens van de rede.
+
       <ul>
-        <li>Persoonlijke intake, telefonisch of digitaal</li>
-        <li>Checklist op maat en hulp bij het verzamelen van bewijs</li>
-        <li>Wij dienen uw aanvraag in en volgen de IND-termijnen</li>
+        <li> <strong>ONZE FILOSOFIE</strong>
+Bij UwVerblijfsvergunning.nl zoeken wij altijd een oplossing voor uw persoonlijke situatie. Er is geen standaard werkwijze binnen het vreemdelingenrecht. Dit is altijd maatwerk. Dat betekent dat voor iedereen een ander route is om een verblijfsvergunning te kunnen bemachtigen.</li>
+        <li> <strong>ONZE TARIEVEN</strong> 
+Wij bieden onze diensten aan voor vaste tarieven. Dit is tegenover particulieren transparant en staat u nooit voor financiële verrassingen. Er komen voor u geen bijkomende kosten dan het afgesproken tarief. </li>
+       
       </ul>
     </div>
     <div>
@@ -90,15 +95,11 @@ include 'header.php';
         <div class="contact-links">
           <div>
             <span>Bel ons</span>
-            <a href="tel:+31297548241">0297&nbsp;548&nbsp;241</a>
+            <a href="tel:">31&nbsp;297&nbsp;548&nbsp;241</a>
           </div>
           <div>
             <span>E-mail</span>
             <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
-          </div>
-          <div>
-            <span>Adres</span>
-            <strong>Postbus 1245, 2130 EM Hoofddorp</strong>
           </div>
         </div>
       </div>

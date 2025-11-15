@@ -13,7 +13,10 @@ $page_title = $page_title ?? 'UwVerblijfsvergunning.nl';
 <body>
 <header class="site-header">
   <div class="header-inner">
-    <a class="logo" href="index.php">UwVerblijfsvergunning.nl</a>
+    <a class="logo" href="index.php">UwVerblijfsvergunning.nl
+    </a>
+    <a class="minilogo" href="index.php"> Alles over uw verblijf in Nederland
+</a>
     <nav class="main-nav" aria-label="Hoofdmenu">
       <a href="index.php">Home</a>
       <a href="index.php#diensten">Diensten</a>

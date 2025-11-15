@@ -75,7 +75,13 @@ h3 {
   color: #fff;
   transition: color 0.3s ease;
 }
-
+.minilogo {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  transition: color 0.3s ease;
+  margin-left: 10px;
+}
 .main-nav {
   display: flex;
   flex-wrap: wrap;
