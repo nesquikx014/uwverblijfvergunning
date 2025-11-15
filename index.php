@@ -56,6 +56,26 @@ include 'header.php';
         <a href="info.php?page=bezwaar-beroep">Lees meer</a>
       </article>
       <article class="tile">
+        <h3>Onbepaalde tijd</h3>
+        <p>Voorbereiding op het aanvragen van een verblijfsvergunning onbepaalde tijd of EU-duurzaam verblijf.</p>
+        <a href="info.php?page=verblijfsvergunning-onbepaalde-tijd-aanvragen">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>Visum kort verblijf</h3>
+        <p>Schengenvisum of spoedaanvraag nodig? Wij verzorgen de aanvraag en onderbouwingen.</p>
+        <a href="info.php?page=schengenvisum">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>Student &amp; Zoekjaar</h3>
+        <p>Van toelating tot verlenging: begeleiding voor studenten en afgestudeerden met zoekjaar.</p>
+        <a href="info.php?page=studeren-in-nederland">Lees meer</a>
+      </article>
+      <article class="tile">
+        <h3>Medische behandeling</h3>
+        <p>Ondersteuning bij aanvragen op medische gronden, inclusief artsverklaring en IND-voorwaarden.</p>
+        <a href="info.php?page=verblijfsvergunning-medische-gronden">Lees meer</a>
+      </article>
+      <article class="tile">
         <h3>Intake op maat</h3>
         <p>Snel helderheid over uw situatie. Binnen 24 uur ontvangt u een stappenplan en kostenoverzicht.</p>
         <a href="#contact">Plan intake</a>
@@ -68,16 +88,20 @@ include 'header.php';
   <div class="container about">
     <div>
       <h2>Onze werkwijze</h2>
-
-
-Laat de toekomst je nooit storen. U zult het tegemoet treden, als het moet, met dezelfde wapens van de rede waartegen u zich vandaag bewapent. Je zult het tegemoet treden, als het moet, met dezelfde wapens van de rede.
-
-      <ul>
-        <li> <strong>ONZE FILOSOFIE</strong>
-Bij UwVerblijfsvergunning.nl zoeken wij altijd een oplossing voor uw persoonlijke situatie. Er is geen standaard werkwijze binnen het vreemdelingenrecht. Dit is altijd maatwerk. Dat betekent dat voor iedereen een ander route is om een verblijfsvergunning te kunnen bemachtigen.</li>
-        <li> <strong>ONZE TARIEVEN</strong> 
-Wij bieden onze diensten aan voor vaste tarieven. Dit is tegenover particulieren transparant en staat u nooit voor financiële verrassingen. Er komen voor u geen bijkomende kosten dan het afgesproken tarief. </li>
-       
+      <p>We werken in kleine teams en houden de lijnen kort. Geen memo’s vol jargon, maar duidelijkheid in vier stappen.</p>
+      <ul class="work-list">
+        <li>
+          <strong>Intake:</strong> een kort gesprek waarin we uw doel bepalen en de benodigde bewijsstukken opvragen.
+        </li>
+        <li>
+          <strong>Dossier:</strong> u ontvangt een checklist; wij beoordelen het dossier op juridische eisen.
+        </li>
+        <li>
+          <strong>Indienen:</strong> we dienen digitaal in, monitoren de termijnen en houden u op de hoogte.
+        </li>
+        <li>
+          <strong>Tarieven:</strong> vaste prijsafspraken, zodat u precies weet waar u aan toe bent.
+        </li>
       </ul>
     </div>
     <div>
@@ -96,6 +120,10 @@ Wij bieden onze diensten aan voor vaste tarieven. Dit is tegenover particulieren
           <div>
             <span>Bel ons</span>
             <a href="tel:">31&nbsp;297&nbsp;548&nbsp;241</a>
+            <p class="contact-note">
+              <strong>8:00-19:00</strong><br>
+              Bel voor een gratis intake gesprek
+            </p>
           </div>
           <div>
             <span>E-mail</span>
