@@ -19,7 +19,7 @@ include 'header.php';
     <h1>Hulp bij uw verblijfsvergunning in Nederland</h1>
     <p>Meer dan 18 jaar ervaring met gezinshereniging, EU-rechten, arbeid en naturalisatie. We leggen uit wat nodig is en begeleiden u stap voor stap.</p>
     <div class="hero-actions">
-      <a class="btn btn--primary" href="#contact">Plan een intake</a>
+      <a class="btn btn--primary" href="contact.php">Plan een intake</a>
       <a class="btn btn--ghost" href="kennisbank.php">Lees onze uitleg</a>
     </div>
   </div>
