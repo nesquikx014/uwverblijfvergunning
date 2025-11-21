@@ -1,62 +1,74 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: index.php');
-    exit;
+$page_title = 'Contact - UwVerblijfsvergunning.nl';
+$contactFeedback = '';
+if (isset($_GET['message'])) {
+    if ($_GET['message'] === 'success') {
+        $contactFeedback = 'Bedankt! We nemen binnen één werkdag contact met u op.';
+    } elseif ($_GET['message'] === 'error') {
+        $contactFeedback = 'Er ging iets mis bij het versturen. Mail ons rechtstreeks via info@uwverblijfsvergunning.nl.';
+    }
 }
 
-$name = isset($_POST['name']) ? trim($_POST['name']) : '';
-$email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
-$phone = isset($_POST['phone']) ? trim($_POST['phone']) : '';
-$topic = isset($_POST['topic']) ? trim($_POST['topic']) : 'intake';
-$message = isset($_POST['message']) ? trim($_POST['message']) : '';
+include 'header.php';
+?>
 
-if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header('Location: index.php?message=error');
-    exit;
-}
+<section class="section contact-page">
+  <div class="container">
+    <h1>Contact</h1>
+    <p class="intro">Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met u op.</p>
 
-// Clean input to prevent header injection
-$clean = static function (string $value): string {
-    return preg_replace('/[\r\n]+/', ' ', $value ?? '');
-};
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Contactgegevens</h2>
+        <p class="contact-lead">Telefonisch of per e-mail bereikbaar.</p>
+        <div class="contact-links">
+          <div>
+            <span>Bel ons</span>
+            <a href="tel:+31297548241">+31 297 548 241</a>
+            <p class="contact-note"><strong>8:00-19:00</strong><br>Bel voor een gratis intake gesprek</p>
+          </div>
+          <div>
+            <span>E-mail</span>
+            <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
+          </div>
+        </div>
+      </div>
 
-$name = $clean($name);
-$emailClean = $clean($email);
-$phone = $clean($phone);
-$topic = $clean($topic);
+      <form action="send-contact.php" method="POST" class="contact-form">
+        <?php if ($contactFeedback): ?>
+          <p class="form-feedback"><?= htmlspecialchars($contactFeedback, ENT_QUOTES, 'UTF-8'); ?></p>
+        <?php endif; ?>
+        <label>
+          Naam
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          E-mailadres
+          <input type="email" name="email" required>
+        </label>
+        <div class="form-row">
+          <label>
+            Telefoon (optioneel)
+            <input type="tel" name="phone">
+          </label>
+          <label>
+            Onderwerp
+            <select name="topic">
+              <option value="intake">Ik wil een intakegesprek plannen</option>
+              <option value="second-opinion">Ik zoek een second opinion</option>
+              <option value="employer">Ik neem contact op als werkgever</option>
+              <option value="other">Andere vraag</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          Uw vraag
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button class="btn btn--primary" type="submit">Verstuur bericht</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-$topicLabels = [
-    'intake' => 'Intakegesprek',
-    'second-opinion' => 'Second opinion',
-    'employer' => 'Werkgever/HR',
-    'other' => 'Overige vraag',
-];
-$topicLabel = $topicLabels[$topic] ?? $topicLabels['intake'];
-
-$to = 'info@uwverblijfsvergunning.nl';
-$subject = 'Nieuwe intake-aanvraag via website';
-$headers = [
-    'From' => 'no-reply@uwverblijfsvergunning.nl',
-    'Reply-To' => $emailClean,
-    'Content-Type' => 'text/plain; charset=UTF-8',
-];
-
-$mailContent = "Er is een nieuw bericht via het contactformulier:\n\n";
-$mailContent .= "Naam: {$name}\n";
-$mailContent .= "E-mail: {$emailClean}\n";
-$mailContent .= "Telefoon: " . ($phone !== '' ? $phone : 'niet opgegeven') . "\n";
-$mailContent .= "Onderwerp: {$topicLabel}\n\n";
-$mailContent .= "Bericht:\n{$message}\n";
-
-$formattedHeaders = '';
-foreach ($headers as $headerKey => $headerValue) {
-    $formattedHeaders .= "{$headerKey}: {$headerValue}\r\n";
-}
-
-if (mail($to, $subject, $mailContent, $formattedHeaders)) {
-    header('Location: index.php?message=success');
-    exit;
-}
-
-header('Location: index.php?message=error');
-exit;
+<?php include 'footer.php'; ?>

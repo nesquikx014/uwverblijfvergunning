@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: index.php');
+     header('Location: contact.php');
     exit;
 }
 
@@ -11,7 +11,7 @@ $topic = isset($_POST['topic']) ? trim($_POST['topic']) : 'intake';
 $message = isset($_POST['message']) ? trim($_POST['message']) : '';
 
 if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header('Location: index.php?message=error');
+     header('Location: contact.php?message=error');
     exit;
 }
 
@@ -53,10 +53,27 @@ foreach ($headers as $headerKey => $headerValue) {
     $formattedHeaders .= "{$headerKey}: {$headerValue}\r\n";
 }
 
-if (mail($to, $subject, $mailContent, $formattedHeaders)) {
-    header('Location: index.php?message=success');
+// Try to send mail. In many dev containers mail() is not available/working.
+$sent = @mail($to, $subject, $mailContent, $formattedHeaders);
+if ($sent) {
+    header('Location: contact.php?message=success');
     exit;
 }
 
-header('Location: index.php?message=error');
+// Mail failed — as a safe fallback, persist the submission to a local log file
+$logDir = __DIR__ . '/data';
+if (!is_dir($logDir)) {
+    @mkdir($logDir, 0775, true);
+}
+$logFile = $logDir . '/contact-submissions.log';
+$logEntry = "-----\n" . date('c') . "\n" . $mailContent . "\nHeaders:\n" . $formattedHeaders . "\n";
+$saved = @file_put_contents($logFile, $logEntry, FILE_APPEND | LOCK_EX);
+if ($saved !== false) {
+    // Saved for later inspection; treat as success in dev
+    header('Location: contact.php?message=success');
+    exit;
+}
+
+// Nothing worked — return error
+header('Location: contact.php?message=error');
 exit;

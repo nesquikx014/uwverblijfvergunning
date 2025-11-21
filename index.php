@@ -84,21 +84,20 @@ include 'header.php';
     </div>
   </div>
 </section>
-
-<section class="section" id="contact">
+<section class="section contact-page">
   <div class="container">
+    <h1>Contact</h1>
+    <p class="intro">Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+
     <div class="contact-wrapper">
       <div class="contact-info">
-        <h2>Neem contact op</h2>
-        <p class="contact-lead">Laat uw gegevens achter en wij komen binnen één werkdag bij u terug.</p>
+        <h2>Contactgegevens</h2>
+        <p class="contact-lead">Telefonisch of per e-mail bereikbaar.</p>
         <div class="contact-links">
           <div>
             <span>Bel ons</span>
-            <a href="tel:">31&nbsp;297&nbsp;548&nbsp;241</a>
-            <p class="contact-note">
-              <strong>8:00-19:00</strong><br>
-              Bel voor een gratis intake gesprek
-            </p>
+            <a href="tel:+31297548241">+31 297 548 241</a>
+            <p class="contact-note"><strong>8:00-19:00</strong><br>Bel voor een gratis intake gesprek</p>
           </div>
           <div>
             <span>E-mail</span>
@@ -106,6 +105,7 @@ include 'header.php';
           </div>
         </div>
       </div>
+
       <form action="send-contact.php" method="POST" class="contact-form">
         <?php if ($contactFeedback): ?>
           <p class="form-feedback"><?= htmlspecialchars($contactFeedback, ENT_QUOTES, 'UTF-8'); ?></p>
@@ -135,12 +135,13 @@ include 'header.php';
         </div>
         <label>
           Uw vraag
-          <textarea name="message" rows="5" required></textarea>
+          <textarea name="message" rows="6" required></textarea>
         </label>
         <button class="btn btn--primary" type="submit">Verstuur bericht</button>
       </form>
     </div>
   </div>
 </section>
+
 
 <?php include 'footer.php'; ?>

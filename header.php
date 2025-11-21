@@ -23,7 +23,7 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
       <a href="index.php">Home</a>
       <a href="kennisbank.php">Diensten</a>
       <a href="index.php#over">Over ons</a>
-      <a href="index.php#contact">Contact</a>
+      <a href="contact.php">Contact</a>
       
     </nav>
     <form class="header-search" action="kennisbank.php" method="get" role="search" aria-label="Zoek in kennisbank">
