@@ -55,32 +55,7 @@ include 'header.php';
         <p>Afwijzing ontvangen? We beoordelen de beslissing en dienen binnen de termijn bezwaar in.</p>
         <a href="info.php?page=bezwaar-beroep">Lees meer</a>
       </article>
-      <article class="tile">
-        <h3>Onbepaalde tijd</h3>
-        <p>Voorbereiding op het aanvragen van een verblijfsvergunning onbepaalde tijd of EU-duurzaam verblijf.</p>
-        <a href="info.php?page=verblijfsvergunning-onbepaalde-tijd-aanvragen">Lees meer</a>
-      </article>
-      <article class="tile">
-        <h3>Visum kort verblijf</h3>
-        <p>Schengenvisum of spoedaanvraag nodig? Wij verzorgen de aanvraag en onderbouwingen.</p>
-        <a href="info.php?page=schengenvisum">Lees meer</a>
-      </article>
-      <article class="tile">
-        <h3>Student &amp; Zoekjaar</h3>
-        <p>Van toelating tot verlenging: begeleiding voor studenten en afgestudeerden met zoekjaar.</p>
-        <a href="info.php?page=studeren-in-nederland">Lees meer</a>
-      </article>
-      <article class="tile">
-        <h3>Medische behandeling</h3>
-        <p>Ondersteuning bij aanvragen op medische gronden, inclusief artsverklaring en IND-voorwaarden.</p>
-        <a href="info.php?page=verblijfsvergunning-medische-gronden">Lees meer</a>
-      </article>
-      <article class="tile">
-        <h3>Intake op maat</h3>
-        <p>Snel helderheid over uw situatie. Binnen 24 uur ontvangt u een stappenplan en kostenoverzicht.</p>
-        <a href="#contact">Plan intake</a>
-      </article>
-    </div>
+          </div>
   </div>
 </section>
 

@@ -21,13 +21,13 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
     </div>
     <nav class="main-nav" aria-label="Hoofdmenu">
       <a href="index.php">Home</a>
-      <a href="index.php#diensten">Diensten</a>
+      <a href="kennisbank.php">Diensten</a>
       <a href="index.php#over">Over ons</a>
       <a href="index.php#contact">Contact</a>
-      <a href="kennisbank.php">Kennisbank</a>
+      
     </nav>
     <form class="header-search" action="kennisbank.php" method="get" role="search" aria-label="Zoek in kennisbank">
-      <input type="search" name="q" placeholder="Zoek kennisbank" aria-label="Zoekterm" value="<?= htmlspecialchars($header_search_query, ENT_QUOTES, 'UTF-8'); ?>" />
+      <input type="search" name="q" placeholder="Zoek Diensten" aria-label="Zoekterm" value="<?= htmlspecialchars($header_search_query, ENT_QUOTES, 'UTF-8'); ?>" />
       <button type="submit" aria-label="Zoek">
         <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
           <path d="M15.5 14h-.79l-.28-.27A6 6 0 1 0 14 15.5l.27.28v.79L20 21.5 21.5 20zm-5.5 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/>
