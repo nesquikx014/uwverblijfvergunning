@@ -11,18 +11,13 @@
 html {
   scroll-behavior: smooth;
 }
-/* Extra onderruimte voor de Over Ons pagina */
-.about-page .section#over {
-  padding-bottom: 6rem;
-}
-/* Smooth scrolling for in-page anchors */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+ 
 body {
   margin: 0;
   font-family: var(--font);
@@ -284,6 +279,7 @@ h3 {
 
 /* Sections */
 .section {
+  scroll-margin-top: 110px;
   padding: 11rem;
 }
 
@@ -338,8 +334,7 @@ h3 {
   display: grid;
   gap: 2rem;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
+ }
 
 .about img {
   border-radius: calc(var(--radius) + 6px);
@@ -714,7 +709,7 @@ h3 {
 
 .info-article__body > section + section {
   border-top: 1px solid var(--border);
-  padding-top: 1.5rem;
+  padding-top: 11rem;
 }
 
 .info-article__nav {
