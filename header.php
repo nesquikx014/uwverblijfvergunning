@@ -22,7 +22,7 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
     <nav class="main-nav" aria-label="Hoofdmenu">
       <a href="index.php">Home</a>
       <a href="kennisbank.php">Diensten</a>
-      <a href="index.php#over">Over ons</a>
+      <a href="Over.Ons.php">Over ons</a>
       <a href="contact.php">Contact</a>
       
     </nav>

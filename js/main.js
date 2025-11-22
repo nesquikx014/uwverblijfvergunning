@@ -98,3 +98,32 @@ if (infoEntries.length > 0) {
 
   applyFilters();
 }
+
+  // Smooth scroll helpers
+  window.addEventListener('load', () => {
+    // If page was loaded with a hash (e.g. index.php#over), ensure smooth scroll to that element
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        // delay slightly so browser layout has settled
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+      }
+    }
+  });
+
+  // Intercept same-page anchor clicks and smooth-scroll
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    // Only handle plain hash links (e.g. #over)
+    if (href.startsWith('#') && href.length > 1) {
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Update URL without jumping
+        history.pushState(null, '', href);
+      }
+    }
+  });

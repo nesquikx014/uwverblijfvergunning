@@ -1,12 +1,8 @@
-<php 
+<?php
 $page_title = 'Over Ons - UwVerblijfsvergunning.nl';
-$body_class = 'about-page'; 
+$body_class = 'about-page';
 include __DIR__ . '/header.php';
 ?>
-
-
-
-
 
 <section class="section" id="over">
   <div class="container about">
@@ -33,3 +29,5 @@ include __DIR__ . '/header.php';
     </div>
   </div>
 </section>
+
+<?php include __DIR__ . '/footer.php'; ?>
