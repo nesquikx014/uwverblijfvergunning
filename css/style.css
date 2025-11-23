@@ -8,6 +8,8 @@
   --font: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,6 +27,9 @@ body {
   background: #ffffff;
   line-height: 1.6;
 }
+
+
+
 
 img {
   max-width: 100%;
@@ -45,6 +50,7 @@ h2,
 h3 {
   color: #0f2440;
   margin-top: 0;
+  padding: 1rem;
 }
 
 /* Header */
@@ -280,7 +286,7 @@ h3 {
 /* Sections */
 .section {
   scroll-margin-top: 110px;
-  padding: 11rem;
+  padding: 3.5rem;
 }
 
 .section--intro {
@@ -303,6 +309,32 @@ h3 {
 .container {
   margin: 0 2rem;
 }
+
+.container.about {
+  display: flex;
+  align-items: center; 
+  gap: 2rem; 
+  flex-wrap: wrap; 
+}
+
+.container-about-over-ons {
+  display: flex;
+  align-items: center; 
+  gap: 4rem; 
+  flex-wrap: wrap; 
+}
+
+.container.about > div {
+  flex: 1;
+}
+
+.container.about img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: cover; 
+}
+
 
 .intro {
   color: var(--grey);
@@ -334,8 +366,7 @@ h3 {
   display: grid;
   gap: 2rem;
   align-items: center;
- }
-
+}
 .about img {
   border-radius: calc(var(--radius) + 6px);
   box-shadow: 0 16px 40px rgba(10, 20, 40, 0.15);

@@ -5,7 +5,7 @@ include __DIR__ . '/header.php';
 ?>
 
 <section class="section" id="over">
-  <div class="container about">
+  <div class="container-about-over-ons">
     <div>
       <h2>Onze werkwijze</h2>
       <p>We werken in kleine teams en houden de lijnen kort. Geen memo’s vol jargon, maar duidelijkheid in vier stappen.</p>
