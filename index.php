@@ -81,7 +81,7 @@ include 'header.php';
     </div>
     <div>
       <img src="fotos/foto2.jpg" alt="Overleg met cliënten" loading="lazy">
-    </div>
+</div>
   </div>
 </section>
 <section class="section contact-page">

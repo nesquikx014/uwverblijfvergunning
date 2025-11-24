@@ -322,6 +322,7 @@ h3 {
   align-items: center; 
   gap: 4rem; 
   flex-wrap: wrap; 
+  padding:4rem;
 }
 
 .container.about > div {
