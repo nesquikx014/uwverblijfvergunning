@@ -7,7 +7,7 @@
       <a href="kennisbank.php">Diensten</a>
     </div>
   </div>
-  <p class="footer-bottom">© <?= date('Y'); ?> UwVerblijfsvergunning.nl · Copyright 2023 SuiteableIT</p>
+  <p class="footer-bottom">© <?= date('Y'); ?> UwVerblijfsvergunning.nl · nazli 2025 the creator of the site</p>
 </footer>
 <script src="js/main.js" defer></script>
 </body>

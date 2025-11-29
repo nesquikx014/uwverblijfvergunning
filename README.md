@@ -1,7 +1,17 @@
-<div align="center">
-  <a href="https://moonshot.hackclub.com" target="_blank">
-    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/35ad2be8c916670f3e1ac63c1df04d76a4b337d1_moonshot.png" 
-         alt="This project is part of Moonshot, a 4-day hackathon in Florida visiting Kennedy Space Center and Universal Studios!" 
-         style="width: 100%;">
-  </a>
-</div>
+# UwVerblijfsvergunning.nl
+
+Simple PHP site that centralises information about Dutch residence permits and routes visitors to the right help.
+
+## Local setup
+- Install PHP 8+.
+- From the repo root run `php -S localhost:8000` and open `http://localhost:8000`.
+- Quick lint: `for f in *.php info/*.php; do php -l "$f"; done`.
+
+## Project structure
+- `index.php`: landing page.
+- `info.php` and `info/`: knowledge-base router and articles.
+- `kennisbank.php`: service overview.
+- `css/style.css`, `js/main.js`: styling and lightweight behaviour.
+
+## Contact
+Questions or improvements: `info@uwverblijfsvergunning.nl`.
