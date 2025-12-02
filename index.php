@@ -1,5 +1,5 @@
 <?php
-$page_title = 'UwVerblijfsvergunning.nl';
+$page_title = 'nevajuristen.nl';
 
 $contactFeedback = '';
 if (isset($_GET['message'])) {
@@ -55,7 +55,7 @@ include 'header.php';
         <p>Afwijzing ontvangen? We beoordelen de beslissing en dienen binnen de termijn bezwaar in.</p>
         <a href="info.php?page=bezwaar-beroep">Lees meer</a>
       </article>
-          </div>
+</div>
   </div>
 </section>
 
@@ -101,7 +101,8 @@ include 'header.php';
           </div>
           <div>
             <span>E-mail</span>
-            <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
+            <a href="mailto:info@uwverblijfsvergunning.nl">nevajuristen@.nl
+              </a>
           </div>
         </div>
       </div>

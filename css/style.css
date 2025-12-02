@@ -28,9 +28,6 @@ body {
   line-height: 1.6;
 }
 
-
-
-
 img {
   max-width: 100%;
   display: block;
@@ -335,8 +332,6 @@ h3 {
   box-shadow: var(--shadow);
   object-fit: cover; 
 }
-
-
 .intro {
   color: var(--grey);
 }
@@ -450,7 +445,7 @@ h3 {
 .contact-form textarea {
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 0.7rem;
+  padding: 0.7rem; 
   font: inherit;
   color: inherit;
 }
@@ -897,7 +892,6 @@ h3 {
   gap: 1rem;
   align-items: center;
 }
-
 .footer-links a {
   color: #f1f5ff;
 }
@@ -930,5 +924,148 @@ h3 {
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+}
+/* --- VERBETERDE, REALISTISCHE MOBIEL-LAAG --- */
+
+@media (max-width: 720px) {
+
+  /* Header compacter en logischer */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .main-nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .header-search {
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .header-search input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Hero realistischer qua ruimte & tekst */
+  .hero-inner {
+    padding: 1.6rem;
+    gap: 1rem;
+  }
+
+  .hero-inner h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+
+  .hero-inner p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    gap: 0.8rem;
+  }
+
+  /* Container meer mobiel-vriendelijk */
+  .container,
+  .container.about,
+  .container-about-over-ons {
+    padding: 1.4rem 1rem;
+    margin: 0;
+  }
+
+  .container.about > div {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  /* Afbeeldingen schaalbaar maar natuurlijk */
+  .container img,
+  .about img,
+  .container-about-over-ons img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+  }
+
+  /* Grid naar nette één-kolom */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .tile {
+    padding: 1.2rem;
+  }
+
+  /* Contact sectie realistischer ingedeeld */
+  .contact-wrapper {
+    padding: 1.2rem;
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  /* Info-pagina’s netjes en compact */
+  .info-list {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .info-entry a {
+    padding: 0.8rem 1rem;
+  }
+
+  .info-article__inner {
+    padding: 1.4rem;
+  }
+
+  /* Footer realistischer op één kolom */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.7rem;
+  }
+}
+
+
+/* Kleine telefoons (compacter, maar subtiel) */
+@media (max-width: 420px) {
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .logo-tagline {
+    display: none;
+  }
+
+  .hero-inner h1 {
+    font-size: 1.55rem;
+  }
+
+  .hero-inner p {
+    font-size: 0.95rem;
+  }
+
+  .tile {
+    padding: 1rem;
+  }
+
+  .info-entry a {
+    padding: 0.7rem 0.8rem;
   }
 }

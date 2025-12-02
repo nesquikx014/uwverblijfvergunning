@@ -1,5 +1,5 @@
 <?php
-$page_title = $page_title ?? 'UwVerblijfsvergunning.nl';
+$page_title = $page_title ?? 'nevajuristen';
 $body_class = isset($body_class) ? trim($body_class) : '';
 $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
 ?>
@@ -16,7 +16,7 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
-      <a class="logo" href="index.php">UwVerblijfsvergunning.nl</a>
+      <a class="logo" href="index.php">nevajuristen</a>
       <span class="logo-tagline">Alles over uw verblijf in Nederland</span>
     </div>
     <nav class="main-nav" aria-label="Hoofdmenu">

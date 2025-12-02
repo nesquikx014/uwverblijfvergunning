@@ -121,7 +121,7 @@ include __DIR__ . '/header.php';
       </section>
     <?php endforeach; ?>
     <p class="info-empty" data-info-empty hidden role="status">Geen onderwerpen gevonden. Pas de filters aan.</p>
-  </div>
+          </div>
 </section>
 
 <?php include __DIR__ . '/footer.php'; ?>
