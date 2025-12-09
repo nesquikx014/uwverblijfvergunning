@@ -17,7 +17,7 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
   <div class="header-inner">
     <div class="header-brand">
       <a class="logo" href="index.php">nevajuristen</a>
-      <span class="logo-tagline">Alles over uw verblijf in Nederland</span>
+      <span class="logo-tagline">De specialist in al uw IND-zaken</span>
     </div>
     <nav class="main-nav" aria-label="Hoofdmenu">
       <a href="index.php">Home</a>
