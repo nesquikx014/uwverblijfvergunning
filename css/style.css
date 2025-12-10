@@ -284,7 +284,6 @@ h3 {
 /* Sections */
 .section {
   scroll-margin-top: 110px;
-  padding: 0rem;
 }
 
 .section--intro {
@@ -935,6 +934,10 @@ h3 {
 @media (max-width: 720px) {
 
   /* Header compacter en logischer */
+  /* Make base font-size a bit smaller for a tighter mobile appearance */
+  html, body {
+    font-size: 14px;
+  }
   .header-inner {
     flex-direction: row;
     align-items: flex-start;
