@@ -33,7 +33,7 @@ $topicLabels = [
 ];
 $topicLabel = $topicLabels[$topic] ?? $topicLabels['intake'];
 
-$to = 'info@uwverblijfsvergunning.nl';
+$to = 'info@nevajuristen.nl';
 $subject = 'Nieuwe intake-aanvraag via website';
 $headers = [
     'From' => 'no-reply@uwverblijfsvergunning.nl',

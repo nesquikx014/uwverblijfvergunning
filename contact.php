@@ -19,17 +19,21 @@ include 'header.php';
 
     <div class="contact-wrapper">
       <div class="contact-info">
-        <h2>Contactgegevens</h2>
-        <p class="contact-lead">Telefonisch of per e-mail bereikbaar.</p>
-        <div class="contact-links">
-          <div>
-            <span>Bel ons</span>
-            <a href="tel:+31297548241">+31 297 548 241</a>
-            <p class="contact-note"><strong>8:00-19:00</strong><br>Bel voor een gratis intake gesprek</p>
-          </div>
-          <div>
-            <span>E-mail</span>
-            <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
+        <div class="contact-card">
+          <h2>Contactgegevens</h2>
+          <p class="contact-lead">Telefonisch of per e-mail bereikbaar.</p>
+
+          <div class="contact-card-row">
+            <div class="contact-card-item contact-card-call">
+              <div class="contact-card-title">Bel ons</div>
+              <a class="contact-card-large" href="tel:+31297548241">+31 297 548 241</a>
+              <p class="contact-note"><strong>8:00-19:00</strong><br>Bel voor een gratis intake gesprek</p>
+            </div>
+
+            <div class="contact-card-item contact-card-mail">
+              <div class="contact-card-title">E-mail</div>
+              <a class="contact-card-large" href="mailto:info@nevajuristen.nl">info@nevajuristen.nl</a>
+            </div>
           </div>
         </div>
       </div>
