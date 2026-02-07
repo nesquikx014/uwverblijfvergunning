@@ -95,6 +95,8 @@ h3 {
   align-items: center;
   gap: 0.5rem;
   flex-shrink: 0;
+  width: 200px;
+  height: 80px;
 }
 
 .logo {
@@ -108,14 +110,15 @@ h3 {
 }
 
 .logo-image {
-  font-size: 1.4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #fff;
-  height: 50px;
+  height: auto;
   width: auto;
   margin: 0;
   display: flex;
   align-items: center;
+  line-height: 1.2;
 }
 
 
@@ -197,6 +200,10 @@ h3 {
 }
 
 .site-header.is-solid .logo {
+  color: var(--blue);
+}
+
+.site-header.is-solid .logo-image {
   color: var(--blue);
 }
 
