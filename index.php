@@ -97,7 +97,7 @@ include 'header.php';
           </div>
           <div>
             <span>E-mail</span>
-            <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
+            <a href="mailto:info@uwverblijfsvergunning.nl">info@NevaNexisJuristen.nl</a>
           </div>
         </div>
       </div>

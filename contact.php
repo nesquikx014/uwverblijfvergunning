@@ -1,11 +1,11 @@
 <?php
-$page_title = 'Contact - UwVerblijfsvergunning.nl';
+$page_title = 'Contact - info@NevaNexisJuristen.nl';
 $contactFeedback = '';
 if (isset($_GET['message'])) {
     if ($_GET['message'] === 'success') {
         $contactFeedback = 'Bedankt! We nemen binnen één werkdag contact met u op.';
     } elseif ($_GET['message'] === 'error') {
-        $contactFeedback = 'Er ging iets mis bij het versturen. Mail ons rechtstreeks via info@uwverblijfsvergunning.nl.';
+        $contactFeedback = 'Er ging iets mis bij het versturen. Mail ons rechtstreeks via info@NevaNexisJuristen.nl.';
     }
 }
 

@@ -9,7 +9,7 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?></title>
-  <meta name="description" content="UwVerblijfsvergunning.nl helpt u met verblijfsvergunningen, naturalisatie en bezwaarprocedures in Nederland.">
+  <meta name="description" content="NevaNexisJuristen helpt u met verblijfsvergunningen, naturalisatie en bezwaarprocedures in Nederland.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body<?= $body_class !== '' ? ' class="' . htmlspecialchars($body_class, ENT_QUOTES, 'UTF-8') . '"' : ''; ?>>
@@ -17,7 +17,8 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
   <div class="header-inner">
     <div class="header-brand">
       <a class="logo" href="index.php">
-        <img alt="Neva Nexis Juristen." class="logo-image">
+        <a  href="index.php"></a>
+        <img  alt="Neva Nexis Juristen." class="logo-image">
       </a>
     </div>
     <nav class="main-nav" aria-label="Hoofdmenu">

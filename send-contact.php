@@ -36,7 +36,7 @@ $topicLabel = $topicLabels[$topic] ?? $topicLabels['intake'];
 $to = 'info@nevajuristen.nl';
 $subject = 'Nieuwe intake-aanvraag via website';
 $headers = [
-    'From' => 'no-reply@uwverblijfsvergunning.nl',
+    'From' => 'info@NevaNexisJuristen.nl',
     'Reply-To' => $emailClean,
     'Content-Type' => 'text/plain; charset=UTF-8',
 ];
