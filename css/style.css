@@ -1131,7 +1131,7 @@ h3 {
 
 /* Footer */
 .site-footer {
-  background: #0d121d;
+  background: #000000;
   color: #f1f5ff;
   padding: 3rem 1.5rem 2rem;
   margin-top: 4rem;
@@ -1544,3 +1544,146 @@ h3 {
     box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
   }
 }
+
+/* Footer Styling */
+.site-footer {
+  background: #3a3a3a;
+  color: #ccc;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0 0 1.5rem 0;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links-list a {
+  color: #87ceeb;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links-list a:hover {
+  color: #fff;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.footer-phone,
+.footer-email {
+  margin: 0;
+}
+
+.footer-phone a,
+.footer-email a {
+  color: #87ceeb;
+  transition: color 0.3s ease;
+}
+
+.footer-phone a:hover,
+.footer-email a:hover {
+  color: #fff;
+}
+
+.footer-company-info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #555;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.footer-company-info p {
+  margin: 0.4rem 0;
+}
+
+.footer-map {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-disclaimer {
+  color: #87ceeb;
+  transition: color 0.3s ease;
+}
+
+.footer-disclaimer:hover {
+  color: #fff;
+}
+
+.footer-bottom a {
+  color: #87ceeb;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-map {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
