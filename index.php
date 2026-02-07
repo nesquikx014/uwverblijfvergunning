@@ -16,11 +16,11 @@ include 'header.php';
 <section class="hero" id="hero">
   <div class="hero-overlay"></div>
   <div class="hero-inner">
-    <h1>Hulp bij uw nevajuristen in Nederland</h1>
+    <h1>Hulp bij verblijfsvergunningen in Nederland</h1>
     <p>Meer dan 18 jaar ervaring met gezinshereniging, EU-rechten, arbeid en naturalisatie. We leggen uit wat nodig is en begeleiden u stap voor stap.</p>
     <div class="hero-actions">
       <a class="btn btn--primary" href="contact.php">Plan een intake</a>
-      <a class="btn btn--ghost" href="kennisbank.php">Lees onze uitleg</a>
+      <a class="btn btn--ghost" href="kennisbank.php">Lees onze diensten</a>
     </div>
   </div>
 </section>
@@ -28,7 +28,7 @@ include 'header.php';
 <section class="section" id="diensten">
   <div class="container">
     <h2>Wat wij voor u doen</h2>
-    <p class="intro">Een kleine selectie van trajecten die wij dagelijks begeleiden.</p>
+    <p class="intro">Kleine selectie van begeleiding die wij dagelijks uitvoeren.</p>
     <div class="grid">
       <article class="tile">
         <h3>Gezinshereniging</h3>
@@ -86,8 +86,8 @@ include 'header.php';
 </section>
 <section class="section contact-page">
   <div class="container">
-    <h1>Contact</h1>
-    <p class="intro">Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+    <h2>Neem contact met ons op</h2>
+    <p class="intro">Plan een gratis intakegesprek in of stel uw vraag. Wij nemen snel contact met u op.</p>
 
     <div class="contact-wrapper">
       <div class="contact-info">
@@ -101,8 +101,7 @@ include 'header.php';
           </div>
           <div>
             <span>E-mail</span>
-            <a href="mailto:info@uwverblijfsvergunning.nl">nevajuristen@.nl
-              </a>
+            <a href="mailto:info@uwverblijfsvergunning.nl">info@uwverblijfsvergunning.nl</a>
           </div>
         </div>
       </div>

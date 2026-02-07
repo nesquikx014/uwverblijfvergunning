@@ -128,15 +128,26 @@ if (infoEntries.length > 0) {
     }
   });
 
-  // Header search bar toggle
+  // Header search bar toggle and integration with kennisbank filters
   const headerSearch = document.querySelector('.header-search');
   const searchButton = document.querySelector('.header-search button');
-  
+  const headerSearchInput = headerSearch ? headerSearch.querySelector('input[type="search"][name="q"]') : null;
+
   if (headerSearch && searchButton) {
-    // Toggle search dropdown on button click
+    // If the search is already active and contains a query, allow the button to submit the form.
+    // Otherwise toggle the visible search field and focus it.
     searchButton.addEventListener('click', (e) => {
+      const isActive = headerSearch.classList.contains('active');
+      const hasQuery = headerSearchInput && headerSearchInput.value.trim() !== '';
+      if (isActive && hasQuery) {
+        // let the form submit normally
+        return;
+      }
       e.preventDefault();
       headerSearch.classList.toggle('active');
+      if (headerSearch.classList.contains('active') && headerSearchInput) {
+        headerSearchInput.focus();
+      }
     });
 
     // Close search dropdown when clicking outside
@@ -152,4 +163,15 @@ if (infoEntries.length > 0) {
         headerSearch.classList.remove('active');
       }
     });
+
+    // If we're on the kennisbank page, sync the header search input with the on-page info search
+    if (headerSearchInput && infoSearchInput) {
+      // initialize page search with header value
+      infoSearchInput.value = headerSearchInput.value;
+      // forward typing in header to the page search so filters run live
+      headerSearchInput.addEventListener('input', () => {
+        infoSearchInput.value = headerSearchInput.value;
+        infoSearchInput.dispatchEvent(new Event('input', { bubbles: true }));
+      });
+    }
   }

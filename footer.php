@@ -1,13 +1,17 @@
 <footer class="site-footer">
   <div class="footer-inner">
-    <p class="footer-brand">nevajuristen.nl</p>
-    <p class="footer-brand">Tel: 31 297 548 241</p>
+    <p class="footer-brand">NevaNexisJuristen.nl</p>
     <div class="footer-links">
-      <a href="mailto:info@uwverblijfsvergunning.nl">Mail: www.nevajuristen.nl</a>
+      <span>+31 297 548 241</span>
+      <a href="mailto:info@uwverblijfsvergunning.nl">info@NevaNexisJuristen.nl</a>
+    </div>
+    <div class="footer-links">
       <a href="kennisbank.php">Diensten</a>
+      <a href="Over.Ons.php">Over ons</a>
+      <a href="contact.php">Contact</a>
     </div>
   </div>
-  <p class="footer-bottom">© <?= date('Y'); ?> nevajuristen.nl · Copyright 2023 SuiteableIT</p>
+  <p class="footer-bottom">© <?= date('Y'); ?> nevajuristen.nl</p>
 </footer>
 
 <a href="https://wa.me/31297548241" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Stuur ons een WhatsApp bericht naar +31 297 548 241">
