@@ -22,16 +22,19 @@ include 'header.php';
 <section class="section">
   <div class="container">
     <h2>Contactgegevens</h2>
-    <p class="contact-lead">Telefonisch of per e-mail bereikbaar.</p>
+    <p class="contact-lead">Bereikbaar via telefoon, e-mail of WhatsApp.</p>
     <div class="grid">
       <div class="tile">
         <h3>Bel ons</h3>
         <a href="tel:+31297548241">+31 297 548 241</a>
-        <p class="contact-note"><strong>8:00-19:00</strong><br>Bel voor een gratis intake gesprek</p>
+         <a href="tel +31648154534">+31 648 154 534</a>
+
+            <p class="contact-note"><strong>Openingstijden: 08:00 – 19:00</strong><br>
+            <p>Bel voor een gratis intakegesprek. Voor spoedgevallen kunt u ook buiten kantooruren contact met ons opnemen.</p>
       </div>
       <div class="tile">
         <h3>E-mail</h3>
-        <a href="mailto:info@nevajuristen.nl">info@nevajuristen.nl</a>
+        <a href="mailto:info@nevajuristen.nl">info@nevanexis.nl</a>
       </div>
     </div>
   </div>
@@ -62,7 +65,6 @@ include 'header.php';
           <select name="topic">
             <option value="intake">Ik wil een intakegesprek plannen</option>
             <option value="second-opinion">Ik zoek een second opinion</option>
-            <option value="employer">Ik neem contact op als werkgever</option>
             <option value="other">Andere vraag</option>
           </select>
         </label>

@@ -7,7 +7,7 @@ include __DIR__ . '/header.php';
 <section class="hero-about">
   <div class="hero-inner">
     <h1>Over ons</h1>
-    <p class="intro">Wij helpen particulieren en bedrijven met verblijfsvergunningen, naturalisatie en bezwaarprocedures — helder, snel en persoonlijk.</p>
+    <p class="intro">Wij begeleiden particulieren en bedrijven bij verblijfsvergunningen, bezwaar- en beroepsprocedures voor alle immigratiezaken in Nederland. Met 15 jaar ervaring doen wij dit helder, snel en persoonlijk.</p>
   </div>
 </section>
 

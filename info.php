@@ -58,7 +58,7 @@ include __DIR__ . '/header.php';
     </div>
     <div class="info-callout">
       <h2>Persoonlijk advies?</h2>
-      <p>Plan een intake en wij denken met u mee over de beste route.</p>
+      <p>Maak een afspraak en wij bekijken samen de beste route voor u.</p>
       <a class="btn btn--primary" href="index.php#contact">Plan intake</a>
     </div>
     <div class="info-article__nav">

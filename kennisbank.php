@@ -47,9 +47,9 @@ include __DIR__ . '/header.php';
 
 <section class="info-header">
   <div class="info-header__inner">
-    <p class="info-header__eyebrow">Kennisbank</p>
-    <h1>Vind snel de juiste informatie</h1>
-    <p class="info-header__summary">Gebruik de zoekbalk en categorieën om het juiste onderwerp te vinden. Klik daarna op "Bekijken" om het volledige artikel te lezen.</p>
+    <h1>Onze diensten</h1>
+    <p class="info-header__summary">Wij bieden deskundige begeleiding bij immigratiezaken, van het indienen van aanvragen tot het opstellen van bezwaarschriften en het voeren van beroepsprocedures bij de rechtbank. Ons doel is helder: uw zaak zo soepel mogelijk laten verlopen, met duidelijke uitleg en persoonlijke ondersteuning in elke stap.
+Of het nu gaat om het verzamelen van documenten, het beoordelen van uw dossier of het volgen van juridische procedures, wij zorgen dat u precies weet wat er nodig is en houden u continu op de hoogte.</p>
   </div>
 </section>
 
