@@ -108,9 +108,16 @@ h3 {
 }
 
 .logo-image {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
   height: 50px;
   width: auto;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
+
 
 .logo-tagline {
   font-size: 0.85rem;
@@ -190,6 +197,10 @@ h3 {
 }
 
 .site-header.is-solid .logo {
+  color: var(--blue);
+}
+
+.site-header.is-solid .logo-image {
   color: var(--blue);
 }
 

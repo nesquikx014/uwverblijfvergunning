@@ -17,8 +17,7 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
   <div class="header-inner">
     <div class="header-brand">
       <a class="logo" href="index.php">
-        <a  href="index.php"></a>
-        <img  alt="Neva Nexis Juristen." class="logo-image">
+        <p class="logo-image">Neva Nexis Juristen.</p>
       </a>
     </div>
     <nav class="main-nav" aria-label="Hoofdmenu">
