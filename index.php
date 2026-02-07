@@ -50,11 +50,7 @@ include 'header.php';
         <p>Voorbereiding op naturalisatie, documenten verzamelen en meekijken met de gemeente.</p>
         <a href="info.php?page=nederlanderschap">Lees meer</a>
       </article>
-      <article class="tile">
-        <h3>Bezwaar en beroep</h3>
-        <p>Afwijzing ontvangen? We beoordelen de beslissing en dienen binnen de termijn bezwaar in.</p>
-        <a href="info.php?page=bezwaar-beroep">Lees meer</a>
-      </article>
+
 </div>
   </div>
 </section>
