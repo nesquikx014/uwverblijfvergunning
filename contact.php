@@ -15,7 +15,7 @@ include 'header.php';
 <section class="section section--intro">
   <div class="container">
     <h1>Contact</h1>
-    <p class="intro">Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+    <p class="intro">Vul het formulier hieronder in, dan nemen wij zo snel mogelijk contact met u op. Het eerste gesprek is kosteloos en vrijblijvend.</p>
   </div>
 </section>
 
@@ -35,6 +35,12 @@ include 'header.php';
       <div class="tile">
         <h3>E-mail</h3>
         <a href="mailto:info@nevajuristen.nl">info@nevanexis.nl</a>
+        <p><strong>Bezoekadres:</strong>
+Evert van de Beekstraat 1, 1118 CN te Schiphol
+
+Postadres:
+Postbus 75709
+1118 ZT Schiphol</p>
       </div>
     </div>
   </div>
