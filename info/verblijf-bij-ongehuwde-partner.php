@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Verblijf bij (ongehuwde) partner</h2>
 
   <p>Wilt u uw echtgenoot, partner of kinderen naar Nederland laten komen om bij u te wonen? Dan moet een MVV/TEV-aanvraag worden ingediend. De aanvraag kan het makkelijkst vanuit Nederland worden geregeld, waarbij u als referent wordt aangemerkt door de IND.</p>
 
@@ -9,7 +8,7 @@
 
   <p>Is uw partner al in Nederland? Vaak moet hij of zij terug naar het land van herkomst voor een MVV, hoewel er uitzonderingen bestaan. Er zijn ook mogelijkheden om een dergelijke procedure vanuit Nederland aan te vragen zonder MVV. </p>
 
-  <p>Neem contact met ons op om dit te bespreken.Neem contact met ons op voor advies of een gratis intakegesprek.</p>
+  <p>Neem vrijblijvend en kosteloos contact met ons op om uw zaak te bespreken.</p>
 
   <p>
   </p>

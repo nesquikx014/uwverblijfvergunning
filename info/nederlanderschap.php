@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Nederlanderschap aanvragen</h2>
   <p>
     Naturalistatie geeft u stemrecht, een Nederlands paspoort en toegang tot alle sociale voorzieningen. De procedure verloopt via de gemeente
     waar u woont en mondt uit in een Koninklijk Besluit. Vanaf 2024 gelden strengere eisen voor taalniveau en integratie.
@@ -95,3 +94,5 @@
     een heldere tijdlijn tot de ceremonie. Neem contact op voor een dossiercheck.
   </p>
 </section>
+  <p>Neem vrijblijvend en kosteloos contact met ons op om uw zaak te bespreken.</p>
+

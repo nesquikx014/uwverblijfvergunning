@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Arbeid</h2>
   <h2>
   	Verblijf voor werk (arbeid in loondienst)</h2>
 
@@ -14,7 +13,7 @@
 
   <p>Voor een contract voor minder dan 3 maanden, of indien u een asielzoeker of een student in dienst wil nemen dient de aanvraag voor een tewerkstellingsvergunning bij het UWV te worden ingediend.</p>
 
-  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
+  <p>Neem vrijblijvend en kosteloos contact met ons op om uw zaak te bespreken.</p>
 
   <p>Bent u benieuwd wat de mogelijkheden zijn om een buitenlande werknemer in loondienst te nemen? Neem dan contact met ons op om de mogelijkheden te bespreken.
   <a href="https://uwverblijfsvergunning.nl/contact/"> Gratis intake    </a>

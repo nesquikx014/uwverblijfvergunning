@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>EU-burger en gezinsleden</h2>
   <p>
   Wanneer u als burger van de Europese Unie gebruik maakt van uw recht om in een ander EU land te werken of te wonen dan heeft u rechtstreeks vanuit het Europese recht, het recht om in Nederland te verblijven. Dit is vastgelegd in de Europese Richtlijn 2004/ 38 “ recht van vrij verkeer en verblijf van burgers van de Unie en hun familieleden”.</p>
 
@@ -11,11 +10,6 @@
 
   <p>Ook Nederlanders kunnen gebruik maken van het EU-recht door een tijdje in een ander EU-land te gaan wonen met hun gezinsleden en daarna terug te keren. Meer informatie daarover vindt u op onze website onder België-route/ EU-route.</p>
 
-  <p>Als burger van de EU of een familielid van een burger van de EU krijgt u geen verblijfsvergunning maar een verblijfskaart.</p>
-
-  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
-
-  <p>Wilt u weten of dat u in aanmerking komt voor zo’n verblijfskaart dan kunt u een toetsing aan het EU-recht vragen bij de IND. Wilt u dat doen, of heeft u dat gedaan en is dit afgewezen, dan kunnen wij u daarbij adviseren en bijstaan. Meld vrijblijvend en gratis uw zaak aan via het formulier op onze website of neem telefonisch contact met ons op.
-  <a href="https://uwverblijfsvergunning.nl/contact/"> Gratis intake gesprek    </a>
+  
   </p>
 </section>

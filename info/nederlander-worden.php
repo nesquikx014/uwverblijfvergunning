@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Nederlander worden</h2>
   <h2>
   	Nederlander worden kan op 3 manieren:</h2>
 
@@ -41,7 +40,7 @@
 
   <p>Automatische verkrijging van het Nederlanderschap is soms ook mogelijk bij erkenning door een Nederlandse vader of moeder. Heeft u vragen over verkrijging van het Nederlanderschap door erkenning neem dan gerust contact met ons op. Wacht niet te lang want als het kind 7 jaar wordt gelden strengere eisen.</p>
 
-  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
+  <p>Neem vrijblijvend en kosteloos contact met ons op om uw zaak te bespreken.</p>
 
   <p>De Rijkswet op het Nederlanderschap is ingewikkeld. Er zijn regels en uitzonderingen waar u rekening mee te houden. Wij zijn gespecialiseerd in zaken als naturalisatie, optie en dubbele nationaliteit. Wij kunnen u adviseren en helpen bij het indienen van een aanvraag of het voeren van een procedure.
   <a href="https://uwverblijfsvergunning.nl/contact/"> Gratis intake gesprek    </a>

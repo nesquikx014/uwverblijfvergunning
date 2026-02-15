@@ -34,7 +34,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2023 - 2026 linkhof juristen</p>
+    <p>© 2023 - 2026 nevanexis</p>
     <a href="#" class="footer-disclaimer">Schermafbeelding</a>
     <p>Powered by <a href="https://copilot.com">Copilot</a></p>
   </div>

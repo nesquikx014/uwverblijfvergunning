@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Gezinshereniging in Nederland: de basis</h2>
   <p>
     Gezinshereniging is mogelijk voor partners, echtgenoten, kinderen en in specifieke gevallen ouders. De kernvoorwaarden zijn een
     duurzame relatie, voldoende inkomen van de referent en een positieve antecedentencheck. Afhankelijk van het land van herkomst is een
@@ -86,9 +85,5 @@
 </section>
 
 <section class="article-section">
-  <h2>Advies nodig?</h2>
-  <p>
-    Wij ondersteunen u van het eerste contact tot en met het ophalen van de verblijfskaart. Met het dossierportaal uploadt u veilig documenten
-    en volgt u de status. Boek een intake voor persoonlijke begeleiding.
-  </p>
+  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
 </section>

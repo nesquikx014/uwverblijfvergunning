@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Schengenvisum</h2>
   <p>
   Een Visum Kort Verblijf (type C-visum)<strong> </strong>ook wel Schengenvisum genoemd is een visum sticker in het paspoort van een vreemdeling.</p>
 
@@ -13,9 +12,7 @@
 
   <p>Indien uw visumaanvraag wordt afgewezen, kunt u in bezwaar gaan. Dit doet u bij de Immigratie- en Naturalisatiedienst in Nederland.</p>
 
-  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
-
-  <p>Heeft u hulp nodig bij het aanvragen van een visum of wilt u in bezwaar gaan tegen een afgewezen visum aanvraag? Neemt u dan contact met ons op. Wij helpen u graag verder.
-  <a href="https://uwverblijfsvergunning.nl/contact/"> Gratis intake gesprek    </a>
+  
+  <a href="https://uwverblijfsvergunning.nl/contact/">     </a>
   </p>
 </section>

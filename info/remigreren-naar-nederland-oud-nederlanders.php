@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Remigreren naar Nederland – Oud Nederlanders</h2>
   <h2>
   	Terugkeer en Terugkrijgen van de Nederlandse nationaliteit</h2>
 
@@ -13,7 +12,7 @@
   <h2><strong>Eenmaal terug in Nederland.
   </strong></h2>
 
-  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
+  <p>Neem vrijblijvend en kosteloos contact met ons op om uw zaak te bespreken.</p>
 
   <p>Na een jaar legaal (ingeschreven) verblijf in Nederland kunt U aan de Optie Procedure beginnen. Dit is in de meeste gevallen de snelste manier om als voormalig Nederlander, de Nederlandse nationaliteit terug te krijgen.
   <a href="https://uwverblijfsvergunning.nl/contact/"> Gratis intake gesprek    </a>

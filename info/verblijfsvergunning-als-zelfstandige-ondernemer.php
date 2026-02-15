@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Verblijfsvergunning als zelfstandige ondernemer</h2>
   <p>
   Als u een verblijfsvergunning zelfstandige wilt, zal uw aanvraag door het Ministerie van Economische Zaken worden beoordeeld. De beoordeling van uw aanvraag gaat op basis van een puntensysteem. Voor elk van de drie onderdelen moet u minimaal 30 punten van de beschikbare 100 halen om aanspraak te kunnen maken op een verblijfsvergunning zelfstandige.</p>
 
@@ -13,18 +12,7 @@
   <li>Toegevoegde waarde voor Nederland.</li>
   </ul>
 
-  <h2>
-  	Turkse burgers</h2>
-
-  <h2>
-  	EU langdurig ingezetene</h2>
-
-  <h2>
-  	Zelfstandige ondernemers uit de Verenigde Staten en Japan</h2>
-
-  <h2>
-  	Zelfstandige kunstenaars</h2>
-
+ 
   <p>
   Turkse burgers vallen onder het associatierecht en worden vrijgesteld van het MVV-vereiste en het puntensysteem.
   In andere EU-landen kunt u de status <strong>EU langdurig ingezetene</strong> krijgen. Dit is een Europese variant van de permanente verblijfsvergunning. Als u met dergelijke Europese vergunning voor langdurig ingezetenen vanuit een andere Europees land in Nederland wilt ondernemen, gelden versoepelde voorwaarden.

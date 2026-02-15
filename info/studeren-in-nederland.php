@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Studeren in Nederland</h2>
   <p>
   Ben je student afkomstig uit een land buiten de EU en wil je een opleiding in Nederland volgen? Dan heb je een verblijfsvergunning nodig.</p>
 

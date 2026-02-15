@@ -32,9 +32,8 @@
 
   <p>De IND stelt zeer hoge eisen aan het door de ouder te leveren bewijs van de zorg- en opvoedingstaken van zijn of haar Nederlandse kind. De kans op een succesvolle aanvraag neemt toe als veel stukken bij de aanvraag worden overgelegd en de persoonlijke situatie goed wordt uitgelegd. Hierbij kan worden gedacht aan een omgangsregeling, ouderschapsplan, foto’s (met datum waarop de foto’s genomen zijn), verklaringen van school of kinderdagverblijf, verklaringen van verloskundige en/of consultatiebureau, de huisarts, etc. Omdat de IND de regels voor het verkrijgen van een verblijfsrecht op grond van het arrest Chavez-Vilchez heeft aangescherpt is het raadzaam om hierbij juridisch hulp in te schakelen.</p>
 
-  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
+    <p>Neem vrijblijvend en kosteloos contact met ons op om uw zaak te bespreken.</p>
 
-  <p>Vanwege onze ruime ervaring kunnen wij u goed adviseren over de mogelijkheden en kansen in de procedure. Neem daarom contact met ons op indien u verdere vragen heeft.
-  <a href="https://uwverblijfsvergunning.nl/contact/"> Gratis intake gesprek    </a>
+  <a href="https://uwverblijfsvergunning.nl/contact/">  </a>
   </p>
 </section>

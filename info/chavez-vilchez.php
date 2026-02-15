@@ -1,5 +1,4 @@
 <section class="article-section">
-  <h2>Chavez-Vilchez</h2>
   <h2>
   	Verblijf bij minderjarige Nederlands kind (Chavez-Vilchez)</h2>
 
@@ -32,9 +31,8 @@
 
   <p>Omdat de IND de regels voor het verkrijgen van een verblijfsrecht op grond van het arrest Chavez-Vilchez heeft aangescherpt is het raadzaam om hierbij juridisch hulp in te schakelen.</p>
 
-  <h3>Hulp nodig bij allerlei juridische kwesties? Contacteer ons nu.</h3>
+  <p>Neem vrijblijvend en kosteloos contact met ons op om uw zaak te bespreken.</p>
 
-  <p>Vanwege onze ruime ervaring kunnen wij u goed adviseren over de mogelijkheden en kansen in de procedure. Neem daarom contact met ons op indien u verdere vragen heeft.
-  <a href="https://uwverblijfsvergunning.nl/contact/"> Gratis intake gesprek    </a>
+ </a>
   </p>
 </section>
