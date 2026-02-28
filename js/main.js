@@ -256,47 +256,39 @@ document.addEventListener('DOMContentLoaded', () => {
     zoom: 15,
     zoomControl: true,
     scrollWheelZoom: false,
-    attributionControl: false,
+    dragging: true,
+    attributionControl: true,
     touchZoom: true,
     doubleClickZoom: true,
     preferCanvas: false,
   });
 
-  // Use OpenStreetMap tiles as fallback (most reliable)
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors',
+  // Use Mapbox-like Positron layer (bright, clean, professional)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> | &copy; <a href="https://carto.com/">CARTO</a>',
     maxZoom: 19,
-    minZoom: 12,
+    minZoom: 10,
     crossOrigin: true,
   }).addTo(map);
 
-  // Add CartoDB labels layer on top for better visibility
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
-    attribution: '',
-    maxZoom: 19,
-    pane: 'overlayPane',
-    crossOrigin: true,
-  }).addTo(map);
-
-  // Zoom control
+  // Zoom control on bottom-right
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-  // Styled marker with blue circle
+  // Add styled marker
   L.circleMarker(center, {
     radius: 14,
-    fillColor: '#1a4e8c',
+    fillColor: '#0066cc',
     color: '#ffffff',
     weight: 3,
-    fillOpacity: 0.95,
+    fillOpacity: 0.9,
     pane: 'markerPane',
   }).addTo(map);
 
-  // Invalidate size after a short delay
+  // Ensure map renders properly
   setTimeout(() => {
     map.invalidateSize();
-  }, 100);
+  }, 50);
 
-  // Also invalidate when window resizes
   window.addEventListener('resize', () => {
     map.invalidateSize();
   });
