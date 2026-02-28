@@ -11,18 +11,24 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
   <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?></title>
   <meta name="description" content="info@NevaNexisJuristen.nl helpt u met verblijfsvergunningen, naturalisatie en bezwaarprocedures in Nederland.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2r+Yb3g0kQY0H+v8mFv1w3v5Q5x5g8g1v1u5r0M=" crossorigin="" />
 </head>
 <body<?= $body_class !== '' ? ' class="' . htmlspecialchars($body_class, ENT_QUOTES, 'UTF-8') . '"' : ''; ?>>
 <header class="site-header">
   <div class="header-inner">
     <div class="header-brand">
       <a class="logo" href="index.php">
-        <a  href="index.php"></a>
-          
+        <!-- logo image links back to home; stray empty anchor removed -->
         <img src="fotos/logo.png" alt="Neva Nexis Juristen." class="logo-image">
       </a>
     </div>
-    <nav class="main-nav" aria-label="Hoofdmenu">
+    <!-- mobile menu toggle -->
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+      <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6h18M3 12h18M3 18h18" />
+      </svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Hoofdmenu">
       <a href="index.php">Home</a>
       <a href="kennisbank.php">Diensten</a>
       <a href="Over.Ons.php">Over ons</a>

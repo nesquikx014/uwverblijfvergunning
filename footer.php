@@ -47,6 +47,9 @@
   </svg>
 </a>
 
+<!-- Leaflet JS for footer map -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j0YQ7b9Fp8eVd0mW0y4sJf6b3vY3h7gYkq0h7gI=" crossorigin=""></script>
+
 <script src="js/main.js" defer></script>
 
 </body>

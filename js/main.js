@@ -73,6 +73,40 @@ if (infoEntries.length > 0) {
           snippetElement.hidden = true;
         }
       }
+
+      // Footer map initialization (Leaflet)
+      document.addEventListener('DOMContentLoaded', () => {
+        const mapEl = document.getElementById('footer-map');
+        if (!mapEl) return;
+        if (typeof L === 'undefined') return; // Leaflet not loaded
+
+        const center = [52.3066, 4.7645]; // near Schiphol / Handelsksade
+        const map = L.map(mapEl, {
+          center,
+          zoom: 15,
+          zoomControl: false,
+          scrollWheelZoom: false,
+          attributionControl: true,
+        });
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">Carto</a>',
+          maxZoom: 19,
+        }).addTo(map);
+
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+        L.circleMarker(center, {
+          radius: 10,
+          fillColor: '#1a4e8c',
+          color: '#ffffff',
+          weight: 2,
+          fillOpacity: 1,
+        }).addTo(map);
+
+        // make sure the map redraws correctly when the footer becomes visible in some layouts
+        setTimeout(() => map.invalidateSize(), 250);
+      });
       if (visible) {
         matches += 1;
       }
@@ -139,6 +173,11 @@ if (infoEntries.length > 0) {
     searchButton.addEventListener('click', (e) => {
       const isActive = headerSearch.classList.contains('active');
       const hasQuery = headerSearchInput && headerSearchInput.value.trim() !== '';
+      // if nav is collapsed on mobile, open it so the search field is visible
+      if (headerEl && !headerEl.classList.contains('nav-open')) {
+        headerEl.classList.add('nav-open');
+        if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+      }
       if (isActive && hasQuery) {
         // let the form submit normally
         return;
@@ -175,3 +214,90 @@ if (infoEntries.length > 0) {
       });
     }
   }
+
+  // Mobile menu toggle -----------------------------------------------------
+  const menuToggle = document.querySelector('.menu-toggle');
+  const headerEl = document.querySelector('.site-header');
+  const mainNav = document.querySelector('.main-nav');
+  if (menuToggle && headerEl && mainNav) {
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+      headerEl.classList.toggle('nav-open');
+    });
+
+    // close when clicking outside the header/nav
+    document.addEventListener('click', (e) => {
+      if (!headerEl.contains(e.target) && headerEl.classList.contains('nav-open')) {
+        headerEl.classList.remove('nav-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // close when a navigation link is selected
+    mainNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (headerEl.classList.contains('nav-open')) {
+          headerEl.classList.remove('nav-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+// Footer map initialization (Leaflet)
+document.addEventListener('DOMContentLoaded', () => {
+  const mapEl = document.getElementById('footer-map');
+  if (!mapEl) return;
+  if (typeof L === 'undefined') return; // Leaflet not loaded
+
+  const center = [52.3066, 4.7645]; // near Schiphol / Handelskade
+  const map = L.map(mapEl, {
+    center,
+    zoom: 15,
+    zoomControl: true,
+    scrollWheelZoom: false,
+    attributionControl: false,
+    touchZoom: true,
+    doubleClickZoom: true,
+    preferCanvas: false,
+  });
+
+  // Use OpenStreetMap tiles as fallback (most reliable)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 19,
+    minZoom: 12,
+    crossOrigin: true,
+  }).addTo(map);
+
+  // Add CartoDB labels layer on top for better visibility
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+    attribution: '',
+    maxZoom: 19,
+    pane: 'overlayPane',
+    crossOrigin: true,
+  }).addTo(map);
+
+  // Zoom control
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+  // Styled marker with blue circle
+  L.circleMarker(center, {
+    radius: 14,
+    fillColor: '#1a4e8c',
+    color: '#ffffff',
+    weight: 3,
+    fillOpacity: 0.95,
+    pane: 'markerPane',
+  }).addTo(map);
+
+  // Invalidate size after a short delay
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 100);
+
+  // Also invalidate when window resizes
+  window.addEventListener('resize', () => {
+    map.invalidateSize();
+  });
+});

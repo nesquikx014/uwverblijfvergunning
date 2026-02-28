@@ -70,6 +70,13 @@ h3 {
 }
 
 /* Header */
+.menu-toggle {
+  display: none; /* only used on narrow viewports */
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 .site-header {
   position: fixed;
   top: 0;
@@ -96,7 +103,7 @@ h3 {
   gap: 0.5rem;
   flex-shrink: 0;
   width: 200px;
-  height: 80px;
+  height: 90px;
 }
 
 .logo {
@@ -113,12 +120,13 @@ h3 {
   font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
-  height: 50px;
+  height: 90px;
   width: auto;
   margin: 0;
-  display: flex;
-  align-items: center;
-  line-height: 1;
+  display: block;
+  max-height: 90px;
+  object-fit: contain;
+  transition: filter 240ms ease, transform 240ms ease;
 }
 
 
@@ -208,7 +216,8 @@ h3 {
 }
 
 .site-header.is-solid .logo-image {
-  color: #000;
+  /* when header has white background, tint the raster logo towards dark-blue */
+  filter: brightness(0) saturate(100%) sepia(30%) hue-rotate(185deg) saturate(600%) contrast(95%);
 }
 
 .site-header.is-solid .logo-tagline {
@@ -1197,11 +1206,12 @@ h3 {
   }
   .header-inner {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 0.6rem;
     padding: 0.5rem 0.8rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    height: auto;
   }
 
   .header-brand {
@@ -1209,8 +1219,18 @@ h3 {
     min-width: auto;
     order: 1;
     display: flex;
-    flex-direction: column;
-    gap: 0.05rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .header-brand .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
   .logo {
@@ -1219,27 +1239,105 @@ h3 {
   }
 
   .logo-tagline {
-    font-size: 0.65rem;
-    display: block;
-    line-height: 1.1;
-    white-space: nowrap;
-    color: rgba(255, 255, 255, 0.8);
+    display: none;
   }
 
+  /* make the image logo much larger on mobile for a more professional feel */
+  .logo-image {
+    height: 110px;
+    max-height: 110px;
+  }
+
+  /* header padding larger to accommodate bigger logo */
+  .header-inner {
+    padding: 0.6rem 1rem;
+    gap: 0.8rem;
+  }
+
+  /* hamburger toggle button for mobile */
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    order: 2;
+    padding: 0;
+  }
+
+  .menu-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* mobile nav hidden by default, slides down when open */
   .main-nav {
-    flex: 1;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-    font-size: 0.8rem;
-    order: 3;
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: none;
+    order: 4;
+    z-index: 1000;
   }
 
   .main-nav a {
-    padding: 0.25rem 0.4rem;
-    font-size: 0.8rem;
-    white-space: nowrap;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    color: var(--grey);
+  }
+
+  .main-nav a:first-child {
+    border-top: none;
+  }
+
+  .site-header.nav-open .main-nav {
+    display: flex;
+  }
+
+  .site-header.nav-open {
+    background: #fff;
+    color: var(--grey);
+  }
+
+  .site-header.nav-open .main-nav a {
+    color: var(--grey);
+  }
+
+  .site-header.nav-open .menu-toggle {
+    color: #000;
+  }
+
+  .site-header.is-solid .menu-toggle {
+    color: #000;
+    transition: color 240ms ease;
+  }
+
+  .site-header.nav-open .main-nav a:hover {
+    background: var(--blue-light);
+    color: var(--blue);
+  }
+
+  .menu-toggle {
+    transition: color 240ms ease;
+    flex-shrink: 0;
+  }
+
+  .main-nav a {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    color: var(--grey);
   }
 
   .header-search {
@@ -1300,8 +1398,9 @@ h3 {
   .container,
   .container.about,
   .container-about-over-ons {
-    padding: 1.2rem 1rem;
+    padding: 1.5rem 1.2rem;
     margin: 0;
+    max-width: 100%;
   }
 
   .container.about > div {
@@ -1310,22 +1409,16 @@ h3 {
   }
 
   .container.about {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .about {
     grid-template-columns: 1fr;
   }
 
-  /* Slightly enlarge the image of 'Onze werkwijze' on mobile and keep it contained */
-  .about {
-    overflow: hidden;
-  }
-
   .about img {
-    transform: scale(1.05);
-    transition: transform 0.35s ease;
-    box-shadow: 0 20px 50px rgba(10,20,40,0.18);
+    transform: none;
+    box-shadow: 0 8px 20px rgba(10,20,40,0.12);
   }
 
   /* Afbeeldingen schaalbaar maar natuurlijk */
@@ -1339,34 +1432,33 @@ h3 {
 
   /* Grid naar nette twee-kolom op mobiele (2 per rij) met compactere tiles */
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem;
-    margin-top: 0.8rem;
-    padding-left: 0.6rem; /* shift grid slightly left */
-    justify-items: start; /* align tiles to the left */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-left: 0;
+    justify-items: stretch;
   }
 
-  /* Smaller, more compact tiles on mobile */
+  /* Tiles full width on mobile */
   .tile {
-    padding: 0.6rem 0.5rem;
-    font-size: 0.8rem;
-    gap: 0.3rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    gap: 0.5rem;
     box-shadow: 0 2px 6px rgba(18, 43, 94, 0.04);
-    max-width: calc(100% - 6px);
+    width: 100%;
   }
 
   .tile a {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
 
-  /* Nudge certain tiles slightly left so EU-Chavez-Vilchez (2) and Nederlanderschap (4) are more visible */
+  /* Remove tile nudge transforms */
   .grid .tile:nth-child(2),
   .grid .tile:nth-child(4) {
-    transform: translateX(-8px);
+    transform: none;
   }
 
-  /* Contact sectie realistischer ingedeeld */
   .contact-wrapper {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1374,7 +1466,29 @@ h3 {
   }
 
   .contact-form {
+    font-size: 0.95rem;
+  }
+
+  /* Form fields full width and nicely stacked */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-form label {
     font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .contact-form textarea {
+    min-height: 120px;
   }
 
   /* Contact card (prominent rounded block similar to 'Bel ons') */
@@ -1627,6 +1741,31 @@ h3 {
 .footer-map {
   border-radius: 8px;
   overflow: hidden;
+}
+
+.footer-map #footer-map {
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+  background: #ddd;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+/* ensure leaflet map renders correctly */
+.footer-map #footer-map .leaflet-container {
+  font-family: var(--font);
+  background: #f0f0f0;
+}
+
+.footer-map #footer-map .leaflet-tile {
+  border: 0;
+}
+
+@media (max-width: 720px) {
+  .footer-map #footer-map {
+    height: 220px;
+  }
 }
 
 .footer-bottom {
