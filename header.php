@@ -11,7 +11,6 @@ $header_search_query = isset($_GET['q']) ? trim((string) $_GET['q']) : '';
   <title><?= htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?></title>
   <meta name="description" content="info@NevaNexisJuristen.nl helpt u met verblijfsvergunningen, naturalisatie en bezwaarprocedures in Nederland.">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2r+Yb3g0kQY0H+v8mFv1w3v5Q5x5g8g1v1u5r0M=" crossorigin="" />
 </head>
 <body<?= $body_class !== '' ? ' class="' . htmlspecialchars($body_class, ENT_QUOTES, 'UTF-8') . '"' : ''; ?>>
 <header class="site-header">

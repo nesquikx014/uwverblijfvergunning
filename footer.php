@@ -18,7 +18,7 @@
       <div class="footer-contact">
         <p class="footer-phone"><a href="tel:+31297548241">+31297548241</a></p>
         <p class="footer-phone"><a href="tel:+31648154534">+316 481 54 534</a></p>
-        <p class="footer-email"><a href="mailto:info@linkhofJuristen.nl">info@nevanexis.nl</a></p>
+        <p class="footer-email"><a href="mailto:info@nevanexis.nl">info@nevanexis.nl</a></p>
         <div class="footer-company-info">
           <p><strong>Kvk-nummer:</strong> 78407079</p>
           <p><strong>Btw-nummer:</strong> NL003331049B34</p>
@@ -27,16 +27,13 @@
       </div>
     </div>
 
-    <!-- Kaart -->
-    <div class="footer-section footer-map">
-      <div id="footer-map" style="height: 300px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
-    </div>
+    <!-- Kaart verwijderd -->
   </div>
 
   <div class="footer-bottom">
     <p>© 2023 - 2026 nevanexis</p>
-    <a href="#" class="footer-disclaimer">Schermafbeelding</a>
-    <p>Powered by <a href="https://copilot.com">Copilot</a></p>
+    <a href="#" class="footer-disclaimer">Privacy</a>
+    <p>Powered by <a href="https://jouwweb.nl">JouwWeb</a></p>
   </div>
 </footer>
 
@@ -46,9 +43,6 @@
     <path fill="#ffffff" d="M17.05 14.02c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.13-.62.14-.18.27-.71.9-.87 1.09-.16.19-.32.22-.6.08-.28-.14-1.18-.43-2.24-1.39-.82-.73-1.32-1.6-1.48-1.87-.16-.27-.02-.43.12-.56.12-.11.28-.28.42-.42.14-.14.18-.24.28-.4.09-.16.04-.3.02-.43-.02-.13-.6-1.37-.82-1.88-.22-.51-.45-.44-.62-.45-.16-.01-.33-.01-.5-.01-.18 0-.45.02-.69.32-.24.3-.89.96-.89 2.34 0 1.38 1.1 3.04 1.26 3.31.16.27 2.18 3.33 5.6 4.66 3.42 1.33 3.42.99 3.82.92.4-.07 1.27-.52 1.45-1 .18-.48.18-.9.12-1 .06-.08-.64-.5-.92-.64z"/>
   </svg>
 </a>
-
-<!-- Leaflet JS for footer map -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j0YQ7b9Fp8eVd0mW0y4sJf6b3vY3h7gYkq0h7gI=" crossorigin=""></script>
 
 <script src="js/main.js" defer></script>
 

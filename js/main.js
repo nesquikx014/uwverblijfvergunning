@@ -74,39 +74,7 @@ if (infoEntries.length > 0) {
         }
       }
 
-      // Footer map initialization (Leaflet)
-      document.addEventListener('DOMContentLoaded', () => {
-        const mapEl = document.getElementById('footer-map');
-        if (!mapEl) return;
-        if (typeof L === 'undefined') return; // Leaflet not loaded
-
-        const center = [52.3066, 4.7645]; // near Schiphol / Handelsksade
-        const map = L.map(mapEl, {
-          center,
-          zoom: 15,
-          zoomControl: false,
-          scrollWheelZoom: false,
-          attributionControl: true,
-        });
-
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">Carto</a>',
-          maxZoom: 19,
-        }).addTo(map);
-
-        L.control.zoom({ position: 'bottomright' }).addTo(map);
-
-        L.circleMarker(center, {
-          radius: 10,
-          fillColor: '#1a4e8c',
-          color: '#ffffff',
-          weight: 2,
-          fillOpacity: 1,
-        }).addTo(map);
-
-        // make sure the map redraws correctly when the footer becomes visible in some layouts
-        setTimeout(() => map.invalidateSize(), 250);
-      });
+      // footer map removed — no action
       if (visible) {
         matches += 1;
       }
@@ -244,52 +212,4 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r
       });
     });
   }
-// Footer map initialization (Leaflet)
-document.addEventListener('DOMContentLoaded', () => {
-  const mapEl = document.getElementById('footer-map');
-  if (!mapEl) return;
-  if (typeof L === 'undefined') return; // Leaflet not loaded
-
-  const center = [52.3066, 4.7645]; // near Schiphol / Handelskade
-  const map = L.map(mapEl, {
-    center,
-    zoom: 15,
-    zoomControl: true,
-    scrollWheelZoom: false,
-    dragging: true,
-    attributionControl: true,
-    touchZoom: true,
-    doubleClickZoom: true,
-    preferCanvas: false,
-  });
-
-  // Use Mapbox-like Positron layer (bright, clean, professional)
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> | &copy; <a href="https://carto.com/">CARTO</a>',
-    maxZoom: 19,
-    minZoom: 10,
-    crossOrigin: true,
-  }).addTo(map);
-
-  // Zoom control on bottom-right
-  L.control.zoom({ position: 'bottomright' }).addTo(map);
-
-  // Add styled marker
-  L.circleMarker(center, {
-    radius: 14,
-    fillColor: '#0066cc',
-    color: '#ffffff',
-    weight: 3,
-    fillOpacity: 0.9,
-    pane: 'markerPane',
-  }).addTo(map);
-
-  // Ensure map renders properly
-  setTimeout(() => {
-    map.invalidateSize();
-  }, 50);
-
-  window.addEventListener('resize', () => {
-    map.invalidateSize();
-  });
-});
+// footer map removed — no initialization needed
